@@ -14,6 +14,9 @@ def dstselectPath():
 
 def getallPath():
     for root, dirs, files in os.walk(srcpath.get()):
+        for dire in dirs:
+            os.chdir(dstpath.get()+root[len(srcpath.get()):])
+            os.mkdir(dire)
         for name in files:
             filepath = os.path.join(root, name)
             f =  open(filepath,"r")
