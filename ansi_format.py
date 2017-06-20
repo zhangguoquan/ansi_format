@@ -1,4 +1,4 @@
-#-*- coding:utf-8 -*-
+﻿#-*- coding:utf-8 -*-
 from Tkinter import *
 from tkFileDialog import askdirectory
 import os
@@ -34,7 +34,7 @@ root = Tk()
 dstpath = StringVar()
 srcpath = StringVar()
 
-Label(root, text = "source DIR".decode('gbk')).grid(row = 0, column = 0)
+Label(root, text = "源路径".decode('gbk')).grid(row = 0, column = 0)
 Entry(root, textvariable = srcpath).grid(row = 0, column = 1)
 Button(root,text = "Change".decode('gbk'), command = srcselectPath).grid(row = 0, column = 2)
 
