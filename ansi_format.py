@@ -36,15 +36,15 @@ srcpath = StringVar()
 
 Label(root, text = "源路径".decode('gbk')).grid(row = 0, column = 0)
 Entry(root, textvariable = srcpath).grid(row = 0, column = 1)
-Button(root,text = "Change".decode('gbk'), command = srcselectPath).grid(row = 0, column = 2)
+Button(root,text = "选择".decode('gbk'), command = srcselectPath).grid(row = 0, column = 2)
 
-Label(root, text = "destination DIR".decode('gbk')).grid(row = 1, column = 0)
+Label(root, text = "目的路径".decode('gbk')).grid(row = 1, column = 0)
 Entry(root, textvariable = dstpath).grid(row = 1, column = 1)
-Button(root,text = "Change".decode('gbk'), command = dstselectPath).grid(row = 1, column = 2)
+Button(root,text = "选择".decode('gbk'), command = dstselectPath).grid(row = 1, column = 2)
 
 
 
-Button(root,text = "Convert".decode('gbk'), command = getallPath).grid(row = 2, column = 1)
+Button(root,text = "转换".decode('gbk'), command = getallPath).grid(row = 2, column = 1)
 
 
 root.mainloop()
