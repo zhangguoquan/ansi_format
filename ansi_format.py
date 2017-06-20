@@ -26,10 +26,7 @@ def getallPath():
             ff.write(str2)
             f.close()
             ff.close()
-    
-    
-    
-    
+  
 root = Tk()
 dstpath = StringVar()
 srcpath = StringVar()
@@ -42,9 +39,6 @@ Label(root, text = "目的路径".decode('gbk')).grid(row = 1, column = 0)
 Entry(root, textvariable = dstpath).grid(row = 1, column = 1)
 Button(root,text = "选择".decode('gbk'), command = dstselectPath).grid(row = 1, column = 2)
 
-
-
 Button(root,text = "转换".decode('gbk'), command = getallPath).grid(row = 2, column = 1)
-
 
 root.mainloop()
