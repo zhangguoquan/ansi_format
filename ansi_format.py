@@ -1,6 +1,6 @@
 ﻿#-*- coding:utf-8 -*-
 from tkinter import *
-
+from tkinter import filedialog
 import os
 import re
 
@@ -41,5 +41,5 @@ Button(root,bg = 'lightblue',text = "选择".decode('utf-8'), command = srcselec
 Label(root, bg = 'lightblue',text = "目的路径".decode('utf-8')).grid(row = 1, column = 0)
 Entry(root, textvariable = dstpath).grid(row = 1, column = 1)
 filedialog.Button(root,bg = 'lightblue',text = "选择".decode('utf-8'), command = dstselectPath).grid(row = 1, column = 2)
-bttn = Button(root,text = "转换".decode('utf-8'), width = 20,bg = "lightblue",command = getallPath).grid(row = 2,column = 1)
+filedialog.Button(root,text = "转换".decode('utf-8'), width = 20,bg = "lightblue",command = getallPath).grid(row = 2,column = 1)
 root.mainloop()
